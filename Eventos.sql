@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS db_eventos360
+USE db_eventos360;
+CREATE TABLE Cliente (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(18) UNIQUE NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    email VARCHAR(100)
+);
